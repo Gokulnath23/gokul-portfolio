@@ -1935,4 +1935,22 @@ textarea.form-input::-webkit-resizer { display: none; }
   transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .about-text ol li {
+    padding-left: 20px; /* Reduce space for smaller screens */
+  }
+
+  .about-text ol li::before {
+    font-size: 20px; /* Reduce bullet size */
+  }
+
+  .social-icons {
+    flex-wrap: wrap; /* Ensure icons wrap on smaller screens */
+    gap: 15px;
+  }
+
+  .social-icon {
+    font-size: 24px; /* Reduce icon size for mobile */
+  }
+}
 
