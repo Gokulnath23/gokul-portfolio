@@ -1880,3 +1880,59 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+/* Target the ol inside .about-text */
+.about-text ol {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 20px; /* Optional, just for spacing */
+}
+
+/* Style the li elements inside the ol in .about-text */
+.about-text ol li {
+  position: relative; /* To position the custom bullet point */
+  padding-left: 30px; /* Space for the custom bullet */
+  margin-bottom: 10px; /* Add some space between list items */
+}
+
+/* Add a custom golden bullet point using the ::before pseudo-element */
+.about-text ol li::before {
+  content: "•"; /* Unicode for the bullet point */
+  font-size: 30px; /* Increase bullet size */
+  color: gold; /* Golden color for the bullet */
+  position: absolute;
+  left: 0; /* Position the bullet point at the start of the list item */
+  top: 50%;
+  transform: translateY(-50%); /* Center the bullet vertically */
+}
+
+/* Optional: Adding a hover effect for list items */
+.about-text ol li:hover {
+  color: gold; /* Change the text color on hover */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;  /* Centers the items horizontally */
+  align-items: center;      /* Centers the items vertically */
+  gap: 30px;
+  flex-wrap: wrap;          /* Allows the items to wrap when needed */
+}
+
+.social-icon {
+  font-size: 30px;
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #0077b5; /* LinkedIn color for hover, you can change this */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+.social-icon i {
+  transition: all 0.3s ease;
+}
+
+
