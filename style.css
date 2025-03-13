@@ -1954,3 +1954,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 }
 
+@media (max-width: 580px) {
+  .client-logo img {
+    width: 65px;
+    filter: invert(70%) sepia(90%) saturate(300%) hue-rotate(10deg);
+  }
+}
+
