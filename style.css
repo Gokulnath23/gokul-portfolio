@@ -1950,10 +1950,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 }
 
-@media (max-width: 580px) {
+
   .client-logo{
     width: 65px;
     filter: invert(80%) sepia(90%) saturate(300%) hue-rotate(10deg);
   }
-}
+
 
